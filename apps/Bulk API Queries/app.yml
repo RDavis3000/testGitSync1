@@ -1,0 +1,8 @@
+version: 43.0.9
+pageUuid: 155c9496-b848-11ed-a98d-bf19bbe5109a
+appTemplate:
+  folders:
+    - Temporary state
+  rootScreen: null
+  version: 2.110.2
+  markdownLinkBehavior: auto
