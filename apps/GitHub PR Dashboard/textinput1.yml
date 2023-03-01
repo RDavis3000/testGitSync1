@@ -13,7 +13,7 @@ template:
     - validatonType: ''
     - currencyType: USD
     - leftIconName: github
-    - initialValue: bvaughn
+    - initialValue: RDavis3000
     - validationMessage: ''
     - tooltipText: ''
     - value: ''
