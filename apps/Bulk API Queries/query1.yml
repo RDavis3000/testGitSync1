@@ -1,0 +1,158 @@
+id: query1
+type: datasource
+subtype: GraphQLQuery
+resourceName: cf05fd0b-3ded-4281-9255-77f02cdc5751
+resourceDisplayName: githubresource1
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: |
+        {
+          search: search(query: "review-requested:{{textinput1.value}} is:pr is:open", type: ISSUE, last: 10) {
+            edges {
+              node {
+                ... on PullRequest {
+                  title
+                  additions
+                  deletions
+                  changedFiles
+                  resourcePath
+                  author {
+                    login
+                    avatarUrl
+                  }
+                  createdAt
+                  bodyHTML
+                }
+              }
+            }
+          }
+          waiting: search(query: "is:open is:pr author:{{textinput1.value}} archived:false", type: ISSUE, last: 10) {
+            edges {
+              node {
+                ... on PullRequest {
+                  title
+                  additions
+                  deletions
+                  changedFiles
+                  resourcePath
+                  author {
+                    login
+                    avatarUrl
+                  }
+                  createdAt
+                  bodyHTML
+                }
+              }
+            }
+          } 
+          user(login: "{{textinput1.value}}") {
+            login
+            avatarUrl
+            pullRequests(first: 25, states: [OPEN]) {
+              nodes {
+                title
+                additions
+                deletions
+                changedFiles
+                resourcePath
+                assignees(first: 3) {
+                  nodes {
+                    login
+                  }
+                }
+                reviews(states: [APPROVED, PENDING]) {
+                  totalCount
+                }
+                author {
+                  login
+                  avatarUrl
+                }
+                bodyHTML
+              }
+            }
+          }
+        }
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: ''
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - triggersOnSuccess: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - showSuccessConfetti: false
+    - isImported: false
+    - graphQLVariables: '[]'
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - queryRunTime: null
+    - triggersOnFailure: []
+    - changesetObject: ''
+    - errorTransformer: >-
+        //Use the variables data, metadata, and errors to reference these fields
+        from your query's results
+
+        if (Array.isArray(errors) && errors.length > 0) {
+          return errors[0].message;
+        } else {
+          return false
+        }
+            
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: ''
+    - graphQLErrors: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: true
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: raw
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2019-04-27T00:39:17.171Z
