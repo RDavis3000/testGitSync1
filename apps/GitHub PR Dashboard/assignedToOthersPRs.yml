@@ -1,0 +1,8 @@
+id: assignedToOthersPRs
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: return {{query1.data}}.waiting.edges.map(x => x.node)
+    - value: ''
+createdAt: 2019-01-24T09:04:51.703Z

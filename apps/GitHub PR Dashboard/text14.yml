@@ -1,0 +1,31 @@
+id: text14
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - hidden: ''
+    - verticalAlign: center
+    - scrollOverflow: true
+    - tooltipText: ''
+    - value: '{{ selectedPR.value.bodyHTML || ''No description provided'' }}'
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container3
+    row: 2
+    height: 8
+    width: 12
+mobilePosition2:
+  position2:
+    container: container3
+    row: 2
+    height: 6
+    width: 12
+createdAt: 2019-06-19T06:01:20.985Z

@@ -1,0 +1,38 @@
+id: text16
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: >-
+        <div style="display: flex; align-items: center;">
+
+        <img style="width: 14px; height: 14px; border-radius: 2px; margin-right:
+        8px" src="{{ selectedPR.value.author.avatarUrl}}" ><b>{{
+        selectedPR.value.author.login }}</b>
+
+        </div>
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container3
+    row: 1
+    col: 1
+    height: 1
+    width: 11
+mobilePosition2:
+  position2:
+    container: container3
+    row: 1
+    height: 1
+    width: 12
+createdAt: 2019-06-19T20:44:52.222Z

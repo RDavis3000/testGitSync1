@@ -1,0 +1,8 @@
+id: assignedToMePRs
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: return {{query1.data}}.search.edges.map(e => e.node)
+    - value: ''
+createdAt: 2019-01-24T08:58:50.880Z

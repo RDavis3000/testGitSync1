@@ -1,0 +1,29 @@
+id: text11
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: |
+        ### GitHub Pull Request Dashboard
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: true
+style:
+  ordered: []
+position2:
+  position2:
+    col: 1
+    height: 1
+    width: 6
+mobilePosition2:
+  position2:
+    col: 3
+    height: 2
+    width: 9
+createdAt: 2019-01-27T12:52:07.880Z

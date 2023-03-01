@@ -1,0 +1,52 @@
+id: button2
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - color: '#edf4ff'
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: url
+    - exportTemplate: null
+    - url: https://github.com{{ selectedPR.value.resourcePath}}
+    - newWindow: true
+    - value: 🔗
+    - style:
+        ordered:
+          - accent-background: '#edf4ff'
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - events:
+        - ordered:
+            - event: click
+            - method: openUrl
+            - type: util
+            - pluginId: ''
+            - waitType: debounce
+            - waitMs: '0'
+            - params:
+                ordered:
+                  - url: https://github.com{{ selectedPR.value.resourcePath}}
+                  - options:
+                      ordered:
+                        - newTab: true
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+style:
+  ordered:
+    - accent-background: '#edf4ff'
+position2:
+  position2:
+    container: container3
+    height: 1
+    width: 1
+mobilePosition2:
+  position2:
+    container: container3
+    height: 1
+    width: 2
+createdAt: 2019-06-20T22:38:12.242Z

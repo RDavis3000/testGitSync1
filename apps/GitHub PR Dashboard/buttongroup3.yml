@@ -1,0 +1,64 @@
+id: buttongroup3
+type: widget
+subtype: ButtonGroupWidget
+template:
+  ordered:
+    - values: '{{ _.range(0, assignedToMePRs.value.length) }}'
+    - onChange: selectBG2
+    - tooltipText: ''
+    - value: '0'
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - label: ''
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: selectBG2
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - disabled: ''
+    - labels: |-
+        {{ assignedToMePRs.value.map(pr => `
+          <div class="pr-wrapper">
+            <div class="pr-left">
+              <div class="pr-name">
+                <span>${pr.title}</span>
+              </div>
+              <div class="pr-author">
+                <img class="avatar" src=${pr.author.avatarUrl} />
+                ${pr.author.login}
+              </div>
+            </div>
+            <div class="pr-right">
+              <div class="pr-changelog">
+                <span class="additions">+${pr.additions.toLocaleString()}</span> <span class="deletions">-${pr.deletions.toLocaleString()}</span>
+                <div class="pr-files">
+                  <svg class="files-icon" viewBox="0 0 13 16" version="1.1" width="13" height="12" aria-hidden="true"><path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z"></path></svg> ${pr.changedFiles.toLocaleString()} Files
+                </div>
+              </div>
+            </div>
+          </div>
+        `)}}
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    row: 1
+    height: 8
+    width: 12
+mobilePosition2:
+  position2:
+    container: container4
+    row: 1
+    height: 12
+    width: 12
+createdAt: 2019-07-28T19:07:25.063Z

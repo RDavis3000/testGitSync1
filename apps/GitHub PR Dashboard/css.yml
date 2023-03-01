@@ -1,0 +1,113 @@
+id: css
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: |-
+        <style>
+          ._retool-prSelector .button-group-component {
+            flex-direction: row !important;
+          }
+          
+          .button-group-component {
+            flex-wrap: nowrap !important;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow-y: scroll;
+          }
+          
+          .button-group-button_html {
+            max-width: none;
+            width: 98%;
+            margin: 3px 5px;
+          }
+          
+          .button-group-button_html.ant-btn-primary {
+            background-color: #edf6ff;
+            color: #515151;
+          }
+
+          .pr-wrapper {
+            display: flex;
+            padding: 10px 8px;
+          }
+
+          .pr-col {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .pr-left {
+            max-width: 75%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .pr-right {
+            flex-shrink: 0;
+            flex-grow: 1;
+            width: 100px;
+            max-width: 25%;
+          }
+          
+          .pr-name {
+            font-size: 1.2em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            white-space: nowrap;
+          }
+          
+          .pr-changelog {
+            font-weight: 500;
+            text-align: right;
+            -webkit-font-smoothing: antialiased;
+          }
+          
+          .additions {
+            color: #28a745;
+            margin-right: 2px;
+          }
+          .deletions {
+            color: #cb2431;
+          }
+          .files-icon {
+            margin-bottom: -2px;
+          }
+          .pr-files {
+            opacity: 0.8;
+          }
+          .avatar {
+            width: 14px;
+            vertical-align: middle;
+            border-radius: 2px;
+            margin-right: 2px;
+          }
+        </style>
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 23
+    col: 9
+    height: 1
+    width: 3
+mobilePosition2:
+  position2:
+    row: 25
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2019-06-20T22:20:06.494Z

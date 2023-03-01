@@ -1,0 +1,24 @@
+id: text8
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - hidden: ''
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: '### Choose a PR'
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: true
+style:
+  ordered: []
+mobilePosition2:
+  position2:
+    row: 5
+    height: 1
+    width: 12
+createdAt: 2019-06-27T18:33:43.913Z
