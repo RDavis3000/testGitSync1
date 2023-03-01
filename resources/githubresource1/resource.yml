@@ -1,0 +1,52 @@
+databaseName: null
+databasePassword: ''
+databaseUsername: null
+dynamicallyQueryable: false
+editPrivilege: null
+environment: production
+host: null
+options:
+  amazon_secret_access_key: ''
+  api_key: ''
+  application_key: ''
+  athena_secret_access_key: ''
+  auth0_access_token: ''
+  auth0_clientSecret: ''
+  authentication: basic
+  baseURL: https://api.github.com/graphql
+  basic_password: ''
+  basic_username: RDavis3000
+  ca_cert: ''
+  client_cert: ''
+  client_cert_and_key: ''
+  client_key: ''
+  connectionString: ''
+  customHeaders: []
+  customQueryParameters:
+    - - ''
+      - ''
+  dynamo_secret_access_key: ''
+  googleToken: ''
+  oauth1_consumer_secret: ''
+  oauth2_access_token: ''
+  oauth2_access_token_url: https://github.com/login/oauth/access_token
+  oauth2_auth_url: https://github.com/login/oauth/authorize
+  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/user/oauthcallback'
+  oauth2_client_id: ''
+  oauth2_client_secret: ''
+  oauth2_refresh_token: ''
+  oauth2_scope: ''
+  oauth2_share_user_credentials: false
+  privateKey: ''
+  privateKeyPass: ''
+  s3_secret_access_key_id: ''
+  serviceAccountKey: ''
+  spec: https://specs.tryretool.com/specs/github.json
+  sshPassword: ''
+  user_auth_key: ''
+  verify_session_action_enabled: false
+port: null
+ssl: null
+type: github
+uuid: cf05fd0b-3ded-4281-9255-77f02cdc5751
+version: 1.0.0
