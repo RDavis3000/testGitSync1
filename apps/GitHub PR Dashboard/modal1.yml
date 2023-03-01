@@ -1,0 +1,38 @@
+id: modal1
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - buttonBackgroundColor: '#3c92dc'
+    - opened: false
+    - modalOverflowType: visible
+    - hidden: 'true'
+    - open: false
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - style:
+        ordered: []
+    - buttonColor: '#3c92dc'
+    - modalHeight: 500px
+    - onModalOpen: ''
+    - modalWidth: 80%
+    - closeOnOutsideClick: true
+    - loading: ''
+    - disabled: ''
+    - buttonText: Open Modal
+style:
+  ordered: []
+position2:
+  position2:
+    row: 23
+    col: 6
+    height: 1
+    width: 3
+mobilePosition2:
+  position2:
+    row: 35
+    col: 8
+    height: 1
+    width: 3
+createdAt: 2019-07-28T22:31:41.120Z

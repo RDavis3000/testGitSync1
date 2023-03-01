@@ -1,0 +1,17 @@
+id: prList
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: |-
+        const idx = {{  prSelector.value  }};
+
+        const idxMap = {
+          0: {{ unassignedPRs.value }},
+          1: {{ assignedToMePRs.value}},
+          2: {{ approvedPRs.value }}
+        }
+
+        return idxMap[idx]
+    - value: ''
+createdAt: 2019-06-20T22:14:57.542Z

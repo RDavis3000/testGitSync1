@@ -1,0 +1,8 @@
+id: unassignedPRs
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: "return {{query1.data}}.user.pullRequests.nodes.filter(pr => (\n\tpr.assignees.nodes.length === 0\n))"
+    - value: ''
+createdAt: 2019-01-24T08:54:10.272Z

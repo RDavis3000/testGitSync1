@@ -1,0 +1,30 @@
+id: text15
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: <h4>{{ selectedPR.value.title }}</h4>
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container3
+    col: 1
+    height: 1
+    width: 11
+mobilePosition2:
+  position2:
+    container: container3
+    col: 2
+    height: 1
+    width: 10
+createdAt: 2019-06-19T19:29:31.726Z

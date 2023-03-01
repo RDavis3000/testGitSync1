@@ -1,0 +1,27 @@
+id: container3
+type: widget
+subtype: ContainerWidget
+template:
+  ordered:
+    - title: ''
+    - disabled: ''
+    - spinWhenChildrenAreFetching: true
+    - showBorder: true
+    - showDropShadow: true
+    - heightType: fixed
+    - overflowType: visible
+    - style:
+        ordered: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal1
+    height: 11
+    width: 12
+mobilePosition2:
+  position2:
+    row: 13
+    height: 9
+    width: 12
+createdAt: 2019-06-19T03:15:39.693Z

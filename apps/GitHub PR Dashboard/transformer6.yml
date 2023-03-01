@@ -1,0 +1,8 @@
+id: transformer6
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: return 5
+    - value: ''
+createdAt: 2019-07-28T22:23:30.059Z

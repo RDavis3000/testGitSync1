@@ -1,0 +1,28 @@
+id: text10
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: '### ✍🏻 To review ({{ assignedToMePRs.value.length }})'
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    height: 1
+    width: 12
+mobilePosition2:
+  position2:
+    container: container4
+    height: 1
+    width: 12
+createdAt: 2019-07-28T19:07:25.284Z

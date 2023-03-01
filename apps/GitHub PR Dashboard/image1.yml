@@ -1,0 +1,35 @@
+id: image1
+type: widget
+subtype: ImageWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - isFile: false
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - style:
+        ordered: []
+    - exportQuery: ''
+    - imageUrl: https://image.flaticon.com/icons/svg/25/25231.svg
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - imageFile: ''
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    height: 2
+    width: 1
+mobilePosition2:
+  position2:
+    height: 2
+    width: 3
+createdAt: 2019-01-27T16:26:31.294Z

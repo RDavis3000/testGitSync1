@@ -1,0 +1,8 @@
+id: approvedPRs
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: "return {{query1.data}}.user.pullRequests.nodes.filter(pr => (\n\tpr.reviews.totalCount > 0\n))"
+    - value: ''
+createdAt: 2019-01-25T08:04:41.692Z

@@ -1,0 +1,12 @@
+id: selectedPR
+type: state
+subtype: State
+template:
+  ordered:
+    - _persistedValueGetter: null
+    - _persistedValueSetter: null
+    - persistValue: false
+    - persistedValueKey: ''
+    - value: '{{ prList.value[0] }}'
+createdAt: 2019-06-19T19:36:47.164Z
+folder: Temporary state
